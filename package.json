@@ -1,0 +1,19 @@
+{
+  "name": "CustomRoutes",
+  "version": "0.0.0",
+  "engines": {
+    "node": "^0.11.12"
+  },
+  "description": "CustomRoutes",
+  "main": "app.js",
+  "author": "EV63dev",
+  "dependencies": {
+    "hoek": "^2.3.0",
+    "koa": "^0.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

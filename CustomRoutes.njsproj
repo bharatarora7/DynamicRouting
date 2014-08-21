@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>CustomRoutes</Name>
+    <RootNamespace>CustomRoutes</RootNamespace>
+    <NodeExeArguments>
+    </NodeExeArguments>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7552bec4-e76b-45cc-a48d-4ea3b8c29a27</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>BootStrapper.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="BootStrapper.js" />
+    <Compile Include="node_modules\hoek\index.js" />
+    <Compile Include="node_modules\hoek\lib\escape.js" />
+    <Compile Include="node_modules\hoek\lib\index.js" />
+    <Compile Include="node_modules\hoek\test\escaper.js" />
+    <Compile Include="node_modules\hoek\test\index.js" />
+    <Compile Include="node_modules\hoek\test\modules\test1.js" />
+    <Compile Include="node_modules\hoek\test\modules\test2.js" />
+    <Compile Include="node_modules\hoek\test\modules\test3.js" />
+    <Compile Include="node_modules\koa\lib\application.js" />
+    <Compile Include="node_modules\koa\lib\context.js" />
+    <Compile Include="node_modules\koa\lib\request.js" />
+    <Compile Include="node_modules\koa\lib\response.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\index.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\node_modules\mime\mime.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\node_modules\mime\test.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\lib\charset.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\lib\encoding.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\lib\language.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\lib\mediaType.js" />
+    <Compile Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\lib\negotiator.js" />
+    <Compile Include="node_modules\koa\node_modules\cookies\lib\cookies.js" />
+    <Compile Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\index.js" />
+    <Compile Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\test.js" />
+    <Compile Include="node_modules\koa\node_modules\cookies\test\express.js" />
+    <Compile Include="node_modules\koa\node_modules\cookies\test\http.js" />
+    <Compile Include="node_modules\koa\node_modules\cookies\test\restify.js" />
+    <Compile Include="node_modules\koa\node_modules\co\index.js" />
+    <Compile Include="node_modules\koa\node_modules\debug\browser.js" />
+    <Compile Include="node_modules\koa\node_modules\debug\debug.js" />
+    <Compile Include="node_modules\koa\node_modules\debug\node.js" />
+    <Compile Include="node_modules\koa\node_modules\debug\node_modules\ms\index.js" />
+    <Compile Include="node_modules\koa\node_modules\delegates\index.js" />
+    <Compile Include="node_modules\koa\node_modules\delegates\test\index.js" />
+    <Compile Include="node_modules\koa\node_modules\dethroy\index.js" />
+    <Compile Include="node_modules\koa\node_modules\error-inject\index.js" />
+    <Compile Include="node_modules\koa\node_modules\escape-html\index.js" />
+    <Compile Include="node_modules\koa\node_modules\finished\index.js" />
+    <Compile Include="node_modules\koa\node_modules\fresh\index.js" />
+    <Compile Include="node_modules\koa\node_modules\koa-compose\index.js" />
+    <Compile Include="node_modules\koa\node_modules\koa-is-json\index.js" />
+    <Compile Include="node_modules\koa\node_modules\mime-types\build.js" />
+    <Compile Include="node_modules\koa\node_modules\mime-types\lib\index.js" />
+    <Compile Include="node_modules\koa\node_modules\mime-types\test\mime.js" />
+    <Compile Include="node_modules\koa\node_modules\mime-types\test\test.js" />
+    <Compile Include="node_modules\koa\node_modules\only\index.js" />
+    <Compile Include="node_modules\koa\node_modules\statuses\index.js" />
+    <Compile Include="node_modules\koa\node_modules\type-is\index.js" />
+    <Compile Include="node_modules\koa\node_modules\vary\index.js" />
+    <Compile Include="node_modules\node-fs\example.js" />
+    <Compile Include="node_modules\node-fs\lib\fs.js" />
+    <Compile Include="node_modules\node-fs\test\mkdir.test.js" />
+    <Compile Include="node_modules\sys\sys.js" />
+    <Compile Include="node_modules\url\node_modules\punycode\punycode.js" />
+    <Compile Include="node_modules\url\node_modules\punycode\punycode.min.js" />
+    <Compile Include="node_modules\url\test.js" />
+    <Compile Include="node_modules\url\url.js" />
+    <Compile Include="Controllers\requestHandler.js" />
+    <Compile Include="routehandler.js" />
+    <Compile Include="Router.js" />
+    <Compile Include="zoneserver.js" />
+    <Content Include="node_modules\hoek\.npmignore" />
+    <Content Include="node_modules\hoek\.travis.yml" />
+    <Content Include="node_modules\hoek\AUTHORS" />
+    <Content Include="node_modules\hoek\images\hoek.png" />
+    <Content Include="node_modules\hoek\LICENSE" />
+    <Content Include="node_modules\hoek\Makefile" />
+    <Content Include="node_modules\hoek\package.json" />
+    <Content Include="node_modules\hoek\README.md" />
+    <Content Include="node_modules\hoek\test\modules\ignore.txt" />
+    <Content Include="node_modules\koa\.npmignore" />
+    <Content Include="node_modules\koa\.travis.yml" />
+    <Content Include="node_modules\koa\History.md" />
+    <Content Include="node_modules\koa\LICENSE" />
+    <Content Include="node_modules\koa\node_modules\accepts\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\accepts\History.md" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\mime\LICENSE" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\mime\package.json" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\mime\README.md" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\mime\types\mime.types" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\mime\types\node.types" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\LICENSE" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\package.json" />
+    <Content Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\readme.md" />
+    <Content Include="node_modules\koa\node_modules\accepts\package.json" />
+    <Content Include="node_modules\koa\node_modules\accepts\README.md" />
+    <Content Include="node_modules\koa\node_modules\cookies\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\cookies\.travis.yml" />
+    <Content Include="node_modules\koa\node_modules\cookies\History.md" />
+    <Content Include="node_modules\koa\node_modules\cookies\LICENSE.txt" />
+    <Content Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\.travis.yml" />
+    <Content Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\LICENSE.txt" />
+    <Content Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\package.json" />
+    <Content Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\README.md" />
+    <Content Include="node_modules\koa\node_modules\cookies\package.json" />
+    <Content Include="node_modules\koa\node_modules\cookies\README.md" />
+    <Content Include="node_modules\koa\node_modules\co\package.json" />
+    <Content Include="node_modules\koa\node_modules\co\Readme.md" />
+    <Content Include="node_modules\koa\node_modules\debug\.jshintrc" />
+    <Content Include="node_modules\koa\node_modules\debug\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\debug\component.json" />
+    <Content Include="node_modules\koa\node_modules\debug\History.md" />
+    <Content Include="node_modules\koa\node_modules\debug\Makefile" />
+    <Content Include="node_modules\koa\node_modules\debug\node_modules\ms\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\debug\node_modules\ms\package.json" />
+    <Content Include="node_modules\koa\node_modules\debug\node_modules\ms\README.md" />
+    <Content Include="node_modules\koa\node_modules\debug\package.json" />
+    <Content Include="node_modules\koa\node_modules\debug\Readme.md" />
+    <Content Include="node_modules\koa\node_modules\delegates\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\delegates\History.md" />
+    <Content Include="node_modules\koa\node_modules\delegates\Makefile" />
+    <Content Include="node_modules\koa\node_modules\delegates\package.json" />
+    <Content Include="node_modules\koa\node_modules\delegates\Readme.md" />
+    <Content Include="node_modules\koa\node_modules\dethroy\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\dethroy\Makefile" />
+    <Content Include="node_modules\koa\node_modules\dethroy\package.json" />
+    <Content Include="node_modules\koa\node_modules\dethroy\README.md" />
+    <Content Include="node_modules\koa\node_modules\error-inject\package.json" />
+    <Content Include="node_modules\koa\node_modules\error-inject\README.md" />
+    <Content Include="node_modules\koa\node_modules\escape-html\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\escape-html\component.json" />
+    <Content Include="node_modules\koa\node_modules\escape-html\Makefile" />
+    <Content Include="node_modules\koa\node_modules\escape-html\package.json" />
+    <Content Include="node_modules\koa\node_modules\escape-html\Readme.md" />
+    <Content Include="node_modules\koa\node_modules\finished\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\finished\HISTORY.md" />
+    <Content Include="node_modules\koa\node_modules\finished\package.json" />
+    <Content Include="node_modules\koa\node_modules\finished\README.md" />
+    <Content Include="node_modules\koa\node_modules\fresh\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\fresh\History.md" />
+    <Content Include="node_modules\koa\node_modules\fresh\Makefile" />
+    <Content Include="node_modules\koa\node_modules\fresh\package.json" />
+    <Content Include="node_modules\koa\node_modules\fresh\Readme.md" />
+    <Content Include="node_modules\koa\node_modules\koa-compose\package.json" />
+    <Content Include="node_modules\koa\node_modules\koa-compose\Readme.md" />
+    <Content Include="node_modules\koa\node_modules\koa-is-json\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\koa-is-json\LICENSE" />
+    <Content Include="node_modules\koa\node_modules\koa-is-json\package.json" />
+    <Content Include="node_modules\koa\node_modules\koa-is-json\README.md" />
+    <Content Include="node_modules\koa\node_modules\mime-types\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\mime-types\.travis.yml" />
+    <Content Include="node_modules\koa\node_modules\mime-types\component.json" />
+    <Content Include="node_modules\koa\node_modules\mime-types\lib\custom.json" />
+    <Content Include="node_modules\koa\node_modules\mime-types\lib\mime.json" />
+    <Content Include="node_modules\koa\node_modules\mime-types\lib\node.json" />
+    <Content Include="node_modules\koa\node_modules\mime-types\LICENSE" />
+    <Content Include="node_modules\koa\node_modules\mime-types\Makefile" />
+    <Content Include="node_modules\koa\node_modules\mime-types\package.json" />
+    <Content Include="node_modules\koa\node_modules\mime-types\README.md" />
+    <Content Include="node_modules\koa\node_modules\mime-types\SOURCES.md" />
+    <Content Include="node_modules\koa\node_modules\only\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\only\History.md" />
+    <Content Include="node_modules\koa\node_modules\only\Makefile" />
+    <Content Include="node_modules\koa\node_modules\only\package.json" />
+    <Content Include="node_modules\koa\node_modules\only\Readme.md" />
+    <Content Include="node_modules\koa\node_modules\statuses\package.json" />
+    <Content Include="node_modules\koa\node_modules\statuses\README.md" />
+    <Content Include="node_modules\koa\node_modules\type-is\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\type-is\HISTORY.md" />
+    <Content Include="node_modules\koa\node_modules\type-is\package.json" />
+    <Content Include="node_modules\koa\node_modules\type-is\README.md" />
+    <Content Include="node_modules\koa\node_modules\vary\.npmignore" />
+    <Content Include="node_modules\koa\node_modules\vary\History.md" />
+    <Content Include="node_modules\koa\node_modules\vary\LICENSE" />
+    <Content Include="node_modules\koa\node_modules\vary\package.json" />
+    <Content Include="node_modules\koa\node_modules\vary\README.md" />
+    <Content Include="node_modules\koa\package.json" />
+    <Content Include="node_modules\koa\Readme.md" />
+    <Content Include="node_modules\node-fs\.travis.yml" />
+    <Content Include="node_modules\node-fs\LICENSE" />
+    <Content Include="node_modules\node-fs\package.json" />
+    <Content Include="node_modules\node-fs\README.md" />
+    <Content Include="node_modules\sys\package.json" />
+    <Content Include="node_modules\url\.npmignore" />
+    <Content Include="node_modules\url\.travis.yml" />
+    <Content Include="node_modules\url\.zuul.yml" />
+    <Content Include="node_modules\url\node_modules\punycode\LICENSE-GPL.txt" />
+    <Content Include="node_modules\url\node_modules\punycode\LICENSE-MIT.txt" />
+    <Content Include="node_modules\url\node_modules\punycode\package.json" />
+    <Content Include="node_modules\url\node_modules\punycode\README.md" />
+    <Content Include="node_modules\url\package.json" />
+    <Content Include="node_modules\url\README.md" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <None Include="Routes\routes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="node_modules\hoek\" />
+    <Folder Include="node_modules\hoek\images\" />
+    <Folder Include="node_modules\hoek\lib\" />
+    <Folder Include="node_modules\hoek\test\" />
+    <Folder Include="node_modules\hoek\test\modules\" />
+    <Folder Include="node_modules\node-fs\" />
+    <Folder Include="node_modules\node-fs\lib\" />
+    <Folder Include="node_modules\node-fs\test\" />
+    <Folder Include="Routes\" />
+    <Folder Include="node_modules\" />
+    <Folder Include="node_modules\koa\" />
+    <Folder Include="node_modules\koa\lib\" />
+    <Folder Include="node_modules\koa\node_modules\" />
+    <Folder Include="node_modules\koa\node_modules\accepts\" />
+    <Folder Include="node_modules\koa\node_modules\accepts\node_modules\" />
+    <Folder Include="node_modules\koa\node_modules\accepts\node_modules\mime\" />
+    <Folder Include="node_modules\koa\node_modules\accepts\node_modules\mime\types\" />
+    <Folder Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\" />
+    <Folder Include="node_modules\koa\node_modules\accepts\node_modules\negotiator\lib\" />
+    <Folder Include="node_modules\koa\node_modules\cookies\" />
+    <Folder Include="node_modules\koa\node_modules\cookies\lib\" />
+    <Folder Include="node_modules\koa\node_modules\cookies\node_modules\" />
+    <Folder Include="node_modules\koa\node_modules\cookies\node_modules\keygrip\" />
+    <Folder Include="node_modules\koa\node_modules\cookies\test\" />
+    <Folder Include="node_modules\koa\node_modules\co\" />
+    <Folder Include="node_modules\koa\node_modules\debug\" />
+    <Folder Include="node_modules\koa\node_modules\debug\node_modules\" />
+    <Folder Include="node_modules\koa\node_modules\debug\node_modules\ms\" />
+    <Folder Include="node_modules\koa\node_modules\delegates\" />
+    <Folder Include="node_modules\koa\node_modules\delegates\test\" />
+    <Folder Include="node_modules\koa\node_modules\dethroy\" />
+    <Folder Include="node_modules\koa\node_modules\error-inject\" />
+    <Folder Include="node_modules\koa\node_modules\escape-html\" />
+    <Folder Include="node_modules\koa\node_modules\finished\" />
+    <Folder Include="node_modules\koa\node_modules\fresh\" />
+    <Folder Include="node_modules\koa\node_modules\koa-compose\" />
+    <Folder Include="node_modules\koa\node_modules\koa-is-json\" />
+    <Folder Include="node_modules\koa\node_modules\mime-types\" />
+    <Folder Include="node_modules\koa\node_modules\mime-types\lib\" />
+    <Folder Include="node_modules\koa\node_modules\mime-types\test\" />
+    <Folder Include="node_modules\koa\node_modules\only\" />
+    <Folder Include="node_modules\koa\node_modules\statuses\" />
+    <Folder Include="node_modules\koa\node_modules\type-is\" />
+    <Folder Include="node_modules\koa\node_modules\vary\" />
+    <Folder Include="node_modules\sys\" />
+    <Folder Include="node_modules\url\" />
+    <Folder Include="node_modules\url\node_modules\" />
+    <Folder Include="node_modules\url\node_modules\punycode\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
